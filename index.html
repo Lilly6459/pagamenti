@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png">
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938">
+    <meta name="theme-color" content="#db4938">
+    <title>Studio Lomazzo Pagamenti</title>
+  </head>
+  <body>
+
+    <!--NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="navbar" style="background-color: #e53935;">
+      <a class="navbar-brand" href="javascript:void(0)" id="showHome" data-toggle="collapse" data-target=".navbar-collapse.show">Studio Lomazzo Pagamenti</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <div class="input-group col-md-4">
+            <input class="form-control py-2" type="search" placeholder="search" id="example-search-input">
+            <span class="input-group-append">
+              <button class="btn btn-light" type="button">
+                  <i class="fa fa-search"></i>
+              </button>
+            </span>
+      </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="javascript:void(0)" id="showAddCliente" data-toggle="collapse" data-target=".navbar-collapse.show">Aggiungi Cliente</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="javascript:void(0)" id="showEsporta" data-toggle="collapse" data-target=".navbar-collapse.show">Esporta in Excel</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="javascript:void(0)" id="showRiepilogo" data-toggle="collapse" data-target=".navbar-collapse.show">Visualizza Riepilogo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!--SCHERMATE-->
+    <div id="main">      
+      <!--SCHERMATA PRINCIPALE ELENCO CLIENTI-->
+      <div class="home">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="prova">
+              Bruno Bruni
+              <span class="badge badge-success badge-pill">IN REGOLA</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-danger badge-pill">NON IN REGOLA</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Carlo Carli
+              <span class="badge badge-primary badge-pill">1</span>
+            </li>
+          </ul>
+      </div>
+      <!--SCHERMATA AGGIUNGI CLIENTE-->
+      <div class="add" style="display: none;">
+        <h3>Aggiungi Cliente</h3>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Denominazione</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Denominazione">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Data presa in carico</label>
+            <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Data presa in carico">
+          </div>
+          <label for="inputGroupSelect04">Tipologia Attività</label><br>
+          <div class="input-group">
+            <select class="custom-select" id="inputGroupSelect04">
+              <option selected>Scegli attività...</option>
+              <option value="1">Estetista</option>
+              <option value="2">Parrucchiere</option>
+              <option value="3">Bar</option>
+              <option value="4">Ristorante</option>
+              <option value="5">Centro Benessere</option>
+              <option value="6">Sartoria</option>
+              <option value="7">Negozio</option>
+            </select>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Salva</button>
+        </form>
+      </div>
+      <!--SCHERMATA RIEPILOGO-->
+      <div class="riepilogo" style="display: none;">
+        <h3>Visualizza Riepilogo</h3>
+        <div class="btn-group-vertical groupButton" role="group" aria-label="Button group with nested dropdown" id="">
+          <button type="button" class="list-group-item list-group-item-action btn-lg ">Tutti</button>
+          <button type="button" class="list-group-item list-group-item-action btn-lg ">Non in regola con i pagamenti</button>
+            <button id="btnGroupDrop1" type="button" class="list-group-item list-group-item-action btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Per attività
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Estetista</a>
+              <a class="dropdown-item" href="#">Parrucchiere</a>
+              <a class="dropdown-item" href="#">Bar</a>
+              <a class="dropdown-item" href="#">Ristorante</a>
+              <a class="dropdown-item" href="#">Centro Benessere</a>
+              <a class="dropdown-item" href="#">Sartoria</a>
+              <a class="dropdown-item" href="#">Negozio</a>
+
+            </div>
+        </div>
+      </div>
+      <!--SCHERMATA ESPORTA IN EXCEL-->
+      <div class="esporta" style="display: none;">
+        <h3>Esporta in Excel</h3>
+        <div class="btn-group-vertical groupButton" role="group" aria-label="Button group with nested dropdown" id="">
+          <button type="button" class="list-group-item list-group-item-action btn-lg ">Tutti</button>
+          <button type="button" class="list-group-item list-group-item-action btn-lg ">Non in regola con i pagamenti</button>
+            <button id="btnGroupDrop1" type="button" class="list-group-item list-group-item-action btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Per attività
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Estetista</a>
+              <a class="dropdown-item" href="#">Parrucchiere</a>
+              <a class="dropdown-item" href="#">Bar</a>
+              <a class="dropdown-item" href="#">Ristorante</a>
+              <a class="dropdown-item" href="#">Centro Benessere</a>
+              <a class="dropdown-item" href="#">Sartoria</a>
+              <a class="dropdown-item" href="#">Negozio</a>
+            </div>
+        </div>
+      </div>
+      <!--SCHERMATA SINGOLO CLIENTE-->
+      <div class="cliente" style="display: none;">
+        <h3>Bruno Bruni</h3>
+        <h4>ESTETICA</h4>
+        <div class="container">
+          <div id="carouselContent" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active text-center p-4">
+                       <h3>01/2021- 03/2021</h3>
+                       <h4>PAGATO</h4>
+                       <h5>05/04/2021</h5>
+                  </div>
+                  <div class="carousel-item text-center p-4">
+                      <h3>03/2021- 06/2021</h3>
+                      <h4>PAGATO</h4>
+                      <h5>05/04/2021</h5>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        <table>
+          <caption>Pagamenti</caption>
+          <thead>
+            <tr>
+              <th scope="col">PERIODO</th>
+              <th scope="col">PAGATO?</th>
+              <th scope="col">DATA</th>
+              <th scope="col">NOTE</th>
+              <th scope="col">MODIFICA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Periodo">01/2021-03/2021</td>
+              <td data-label="Pagato?">SI</td>
+              <td data-label="Data Pagamento">05/04/2021</td>
+              <td data-label="Note">Il cliente è un mascalzone</td>
+              <td data-label="Modifica"><a class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-edit"></i>
+              </a>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Periodo">01/2021-03/2021</td>
+              <td data-label="Pagato?">SI</td>
+              <td data-label="Data Pagamento">05/04/2021</td>
+              <td data-label="Note">Il cliente è un mascalzone</td>
+              <td data-label="Modifica"><a class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-edit"></i>
+            </tr>
+            <tr>
+              <td data-label="Periodo">01/2021-03/2021</td>
+              <td data-label="Pagato?">SI</td>
+              <td data-label="Data Pagamento">05/04/2021</td>
+              <td data-label="Note">Il cliente è un mascalzone</td>
+              <td data-label="Modifica"><a class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-edit"></i>
+            </tr>
+            <tr>
+              <td data-label="Periodo">01/2021-03/2021</td>
+              <td data-label="Pagato?">SI</td>
+              <td data-label="Data Pagamento">05/04/2021</td>
+              <td data-label="Note">Il cliente è un mascalzone</td>
+              <td data-label="Modifica"><a class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-edit"></i>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    
+  </body>
+  <script src="js/app.js"></script>
+
+</html>

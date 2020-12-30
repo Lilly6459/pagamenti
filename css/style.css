@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+
+#main {
+  width: 100%;
+  padding-top: 5%;
+
+}
+
+.groupButton {
+  width: 100%;
+
+}
+
+.cliente {
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%
+}
+
+.cliente {
+  text-align: center;
+}
+
+.add {
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 8%;
+  padding-right: 5%
+}
+
+.riepilogo {
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 8%;
+
+  padding-right: 5%
+}
+
+.esporta {
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 8%;
+  padding-right: 5%
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 15px;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 1em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .add{
+  padding-top:40%;
+  }
+
+
+  .add h3{
+   text-align:center;
+  }
+  .add button{ 
+  font-size:18px;
+  text-align: center;
+  }
+
+ 
+  .riepilogo{
+  padding-top:40%;
+  }
+
+  .riepilogo h3{
+   text-align:center;
+  }
+  .riepilogo button{ 
+  font-size:18px;
+  text-align: center;
+  }
+
+  .esporta{
+  padding-top:40%;
+  }
+
+  .esporta h3{
+   text-align:center;
+  }
+  .esporta button{ 
+  font-size:18px;
+  text-align: center;
+  }
+  
+  .home {
+  padding-top: 20%;
+  }
+
+  .add{
+  padding-top:15%;
+  }
+
+  .cliente {
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 15%;
+  padding-right: 5%
+}
+
+
+}
+
